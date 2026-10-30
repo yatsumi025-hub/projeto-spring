@@ -52,3 +52,8 @@ Acessar `http://localhost:8080`.
 4. POST /livros retorna resposta adequada?
 5. GET /livros mostra os livros cadastrados?
 6. O que acontece ao reiniciar a aplicação?
+
+## Integrantes
+
+- Gean Carlos de Almeida Reis
+- Isabella Luiza Fernandes Borges
