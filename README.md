@@ -46,12 +46,19 @@ Acessar `http://localhost:8080`.
 
 ## Checklist de testes
 
-1. Aplicação inicia sem erros?
-2. GET /livro continua funcionando?
-3. Formulário envia título e autor?
-4. POST /livros retorna resposta adequada?
-5. GET /livros mostra os livros cadastrados?
-6. O que acontece ao reiniciar a aplicação?
+1. Aplicação inicia sem erros? **Sim.** Iniciada com `./mvnw spring-boot:run` e acessada na porta 8080.
+2. GET /livro continua funcionando? **Sim.** Retorna o JSON do livro O Hobbit.
+3. Formulário envia título e autor? **Sim.** Ao cadastrar “Dom Casmurro”, apareceu “Livro cadastrado com sucesso!”.
+4. POST /livros retorna resposta adequada? **Sim.** O livro foi cadastrado e aparece na lista. O código de resposta é 201 (Created), definido por `@ResponseStatus`.
+5. GET /livros mostra os livros cadastrados? **Sim.** Retorna `[{"titulo":"Dom Casmurro","autor":"Machado de Assis","disponivel":true}]`.
+6. O que acontece ao reiniciar a aplicação? **Esperado:** a lista volta vazia, porque os dados ficam só em memória. (Teste de reinício ainda não realizado.)
+
+## Resultado dos testes
+
+- GET /livro: retorna o JSON do livro (testado no navegador).
+- GET /livro/emprestar e /livro/devolver: alteram a disponibilidade (testado).
+- POST /livros pelo formulário: cadastra e mostra a mensagem de sucesso (testado).
+- GET /livros: lista os livros cadastrados (testado).
 
 ## Integrantes
 
