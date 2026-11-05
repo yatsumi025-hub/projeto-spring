@@ -73,3 +73,5 @@ Este projeto usou o Claude (Anthropic) como apoio em:
 - revisão de texto e organização dos documentos de entrega.
 
 A implementação do frontend, a execução dos testes e os prints das evidências foram feitos por Isabella Luiza Fernandes Borges.
+
+As alterações feitas por Isabella no frontend e no README podem ser conferidas no histórico de commits deste repositório.
