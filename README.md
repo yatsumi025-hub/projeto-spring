@@ -51,7 +51,7 @@ Acessar `http://localhost:8080`.
 3. Formulário envia título e autor? **Sim.** Ao cadastrar “Dom Casmurro”, apareceu “Livro cadastrado com sucesso!”.
 4. POST /livros retorna resposta adequada? **Sim.** O livro foi cadastrado e aparece na lista. O código de resposta é 201 (Created), definido por `@ResponseStatus`.
 5. GET /livros mostra os livros cadastrados? **Sim.** Retorna `[{"titulo":"Dom Casmurro","autor":"Machado de Assis","disponivel":true}]`.
-6. O que acontece ao reiniciar a aplicação? **Esperado:** a lista volta vazia, porque os dados ficam só em memória. (Teste de reinício ainda não realizado.)
+6. O que acontece ao reiniciar a aplicação? **Sim.** Após reiniciar com `./mvnw spring-boot:run`, GET /livros retornou `[]`, pois os dados ficam só em memória.
 
 ## Resultado dos testes
 
