@@ -67,11 +67,9 @@ Acessar `http://localhost:8080`.
 
 ## Uso de ferramentas de IA
 
-Este projeto usou o Claude (Anthropic) como apoio em:
+Durante o desenvolvimento, foi utilizado o Claude (Anthropic) como ferramenta de apoio, nas seguintes atividades:
 
-- organização do repositório e revisão do código;
+- organização da estrutura do repositório e revisão do código;
 - revisão de texto e organização dos documentos de entrega.
 
-A implementação do frontend, a execução dos testes e os prints das evidências foram feitos por Isabella Luiza Fernandes Borges.
-
-As alterações feitas por Isabella no frontend e no README podem ser conferidas no histórico de commits deste repositório.
+A implementação do frontend (HTML, CSS e JavaScript), a execução dos testes e a coleta das evidências foram realizadas por Isabella Luiza Fernandes Borges. As alterações podem ser verificadas no histórico de commits deste repositório.
