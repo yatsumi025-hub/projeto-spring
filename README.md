@@ -64,3 +64,12 @@ Acessar `http://localhost:8080`.
 
 - Gean Carlos de Almeida Reis
 - Isabella Luiza Fernandes Borges
+
+## Uso de ferramentas de IA
+
+Este projeto usou o Claude (Anthropic) como apoio em:
+
+- organização do repositório e revisão do código;
+- redação e formatação do README e dos documentos de entrega.
+
+A implementação do frontend, a execução dos testes e os prints das evidências foram feitos por Isabella Luiza Fernandes Borges.
