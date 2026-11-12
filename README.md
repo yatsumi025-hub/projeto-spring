@@ -84,15 +84,6 @@ Acessar `http://localhost:8080`.
 - Implementação dos endpoints para listar, cadastrar, emprestar e devolver livros.
 - Integração das funcionalidades do backend para atender às requisições do frontend.
 
-### Base fornecida em aula
-- Configuração inicial do projeto Spring Boot.
-- Configuração do arquivo `pom.xml` e das dependências Maven.
-- Inclusão do Maven Wrapper (`mvnw` e `.mvn/`).
-- Configuração dos arquivos `.gitignore` e `.gitattributes`.
-- Criação da classe principal `BibliotecaApplication.java`.
-- Configuração inicial do arquivo `application.properties`.
-- Disponibilização da estrutura inicial de testes `BibliotecaApplicationTests.java`.
-
 ## Integrantes
 
 - Gean Carlos de Almeida Reis
