@@ -61,28 +61,27 @@ Acessar `http://localhost:8080`.
 - GET /livros: lista os livros cadastrados (testado).
 
 
-## Divisão de Responsabilidades e Atividades Desenvolvidas
 
-### Isabella — Documentação e Frontend
-- Desenvolvimento e organização da documentação do projeto no arquivo `README.md`.
-- Identificação dos integrantes e descrição das responsabilidades.
-- Elaboração do checklist e registro dos testes realizados.
-- Documentação do uso de ferramentas de Inteligência Artificial.
-- Desenvolvimento da interface web no arquivo `index.html`.
-- Implementação da comunicação entre frontend e backend utilizando JavaScript e `fetch()`.
-- Desenvolvimento da estilização visual da aplicação no arquivo `style.css`.
+## Divisão de Responsabilidades e Atividades
 
-### Gean — Backend e Modelagem
-- Desenvolvimento da classe `Livro.java`.
-- Implementação dos atributos, getters e setters da classe Livro.
-- Implementação do método `emprestar()`.
-- Implementação do método `devolver()`.
-- Desenvolvimento da classe `LivroService.java`.
-- Implementação do método `listar()` para consulta dos livros.
-- Implementação do método `cadastrar()` para cadastro de livros.
-- Desenvolvimento da classe `LivroController.java`.
-- Implementação dos endpoints para listar, cadastrar, emprestar e devolver livros.
-- Integração das funcionalidades do backend para atender às requisições do frontend.
+### Isabella Luiza Fernandes Borges — Frontend e Documentação
+
+- Desenvolvimento do frontend utilizando HTML, CSS e JavaScript (`index.html` e `style.css`).
+- Integração do frontend com a API do backend utilizando `fetch()`.
+- Elaboração e organização do `README.md`, incluindo título, descrição, tecnologias e integrantes.
+- Preenchimento do checklist de testes.
+- Realização de testes dos endpoints GET e POST, com registro de evidências.
+- Organização do repositório no GitHub.
+- Preparação dos PDFs de entrega.
+
+### Gean Carlos de Almeida Reis — Backend e Modelagem
+
+- Desenvolvimento da documentação do problema, público-alvo e escopo do projeto, com entrega prevista para 19/11.
+- Definição dos três requisitos funcionais (RF01 a RF03).
+- Elaboração do diagrama UML da classe `Livro`, localizado em `docs/uml-classes.png`.
+- Elaboração da justificativa da modelagem no `README.md`.
+- Conferência e execução do backend utilizando `./mvnw spring-boot:run`.
+- Registro das alterações por meio de commit no GitHub.
 
 ## Integrantes
 
