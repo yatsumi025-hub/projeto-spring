@@ -60,6 +60,39 @@ Acessar `http://localhost:8080`.
 - POST /livros pelo formulário: cadastra e mostra a mensagem de sucesso (testado).
 - GET /livros: lista os livros cadastrados (testado).
 
+
+## Divisão de Responsabilidades e Atividades Desenvolvidas
+
+### Isabella — Documentação e Frontend
+- Desenvolvimento e organização da documentação do projeto no arquivo `README.md`.
+- Identificação dos integrantes e descrição das responsabilidades.
+- Elaboração do checklist e registro dos testes realizados.
+- Documentação do uso de ferramentas de Inteligência Artificial.
+- Desenvolvimento da interface web no arquivo `index.html`.
+- Implementação da comunicação entre frontend e backend utilizando JavaScript e `fetch()`.
+- Desenvolvimento da estilização visual da aplicação no arquivo `style.css`.
+
+### Gean — Backend e Modelagem
+- Desenvolvimento da classe `Livro.java`.
+- Implementação dos atributos, getters e setters da classe Livro.
+- Implementação do método `emprestar()`.
+- Implementação do método `devolver()`.
+- Desenvolvimento da classe `LivroService.java`.
+- Implementação do método `listar()` para consulta dos livros.
+- Implementação do método `cadastrar()` para cadastro de livros.
+- Desenvolvimento da classe `LivroController.java`.
+- Implementação dos endpoints para listar, cadastrar, emprestar e devolver livros.
+- Integração das funcionalidades do backend para atender às requisições do frontend.
+
+### Base fornecida em aula
+- Configuração inicial do projeto Spring Boot.
+- Configuração do arquivo `pom.xml` e das dependências Maven.
+- Inclusão do Maven Wrapper (`mvnw` e `.mvn/`).
+- Configuração dos arquivos `.gitignore` e `.gitattributes`.
+- Criação da classe principal `BibliotecaApplication.java`.
+- Configuração inicial do arquivo `application.properties`.
+- Disponibilização da estrutura inicial de testes `BibliotecaApplicationTests.java`.
+
 ## Integrantes
 
 - Gean Carlos de Almeida Reis
