@@ -124,6 +124,9 @@ O LivroService guarda os livros em uma List<Livro> para separar as responsabilid
 Durante o desenvolvimento, foi utilizado o Claude (Anthropic) como ferramenta de apoio, nas seguintes atividades:
 
 - organização da estrutura do repositório e revisão do código;
-- revisão de texto e organização dos documentos de entrega.
+- revisão de texto e organização dos documentos de entrega;
+- montagem dos PDFs de entrega a partir das capturas de tela, dos resultados dos testes e dos textos da dupla.
 
-A implementação do frontend (HTML, CSS e JavaScript), a execução dos testes e a coleta das evidências foram realizadas por Isabella Luiza Fernandes Borges. As alterações podem ser verificadas no histórico de commits deste repositório.
+A implementação do frontend (HTML, CSS e JavaScript), a execução dos testes e a coleta das evidências foram realizadas pelos integrantes da equipe. As alterações podem ser verificadas no histórico de commits deste repositório.
+
+Os PDFs de entrega e as evidências estão na pasta: https://drive.google.com/drive/folders/1iB4vEWCLvkDRqMeeao1nq9oQNcZCUn06?usp=drive_link
