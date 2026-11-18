@@ -13,9 +13,9 @@ Evolução da Biblioteca: formulário + POST + armazenamento temporário.
 **Escopo para 19/11:** na apresentação, a equipe entrega uma aplicação web em Spring Boot que permite cadastrar livros por um formulário, listar os livros cadastrados e emprestar/devolver um livro. Os dados ficam armazenados apenas em memória. Ficam fora do escopo: banco de dados, login de usuários e registro de quem pegou cada livro. 
 
 **Requisitos funcionais:** 
-RF01: o sistema deve permitir cadastrar um livro com título e autor. 
-RF02: o sistema deve permitir consultar a lista de livros cadastrados. 
-RF03: o sistema deve permitir emprestar e devolver um livro.
+- RF01: o sistema deve permitir cadastrar um livro com título e autor. 
+- RF02: o sistema deve permitir consultar a lista de livros cadastrados. 
+- RF03: o sistema deve permitir emprestar e devolver um livro.
 
 
 ## Arquivos
