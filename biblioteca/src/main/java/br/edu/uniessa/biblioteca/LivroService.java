@@ -19,4 +19,17 @@ public class LivroService {
         livros.add(livro);
         return livro;
     }
+
+    // Procura um livro cadastrado pelo título (ignora maiúsculas e minúsculas)
+    public Livro buscarPorTitulo(String titulo) {
+        if (titulo == null) {
+            return null;
+        }
+        for (Livro livro : livros) {
+            if (titulo.equalsIgnoreCase(livro.getTitulo())) {
+                return livro;
+            }
+        }
+        return null;
+    }
 }
