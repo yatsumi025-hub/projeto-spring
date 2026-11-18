@@ -4,6 +4,20 @@ Programação para Internet • 2º bimestre • Aula de 22/10/2026
 
 Evolução da Biblioteca: formulário + POST + armazenamento temporário.
 
+## Problema e requisitos 
+
+**Problema:** em bibliotecas pequenas, o controle dos livros costuma ser feito em cadernos ou planilhas soltas. Isso dificulta saber quais livros existem no acervo e quais estão emprestados, e é comum emprestar um livro que já está com outra pessoa ou perder o registro de uma devolução. 
+
+**Público-alvo:** funcionários e responsáveis por bibliotecas escolares ou comunitárias, que precisam de uma ferramenta simples para registrar o acervo e controlar a disponibilidade dos livros. 
+
+**Escopo para 19/11:** na apresentação, a equipe entrega uma aplicação web em Spring Boot que permite cadastrar livros por um formulário, listar os livros cadastrados e emprestar/devolver um livro. Os dados ficam armazenados apenas em memória. Ficam fora do escopo: banco de dados, login de usuários e registro de quem pegou cada livro. 
+
+**Requisitos funcionais:** 
+RF01: o sistema deve permitir cadastrar um livro com título e autor. 
+RF02: o sistema deve permitir consultar a lista de livros cadastrados. 
+RF03: o sistema deve permitir emprestar e devolver um livro.
+
+
 ## Arquivos
 
 - `Livro.java` → atributos e representação do livro.
