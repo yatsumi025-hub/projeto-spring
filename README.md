@@ -32,8 +32,8 @@ Aplicação web simples para consultar, emprestar, devolver e cadastrar livros d
 ## Arquivos
 
 - `Livro.java` → atributos e representação do livro.
-- `LivroController.java` → recebe GET e POST; devolve respostas HTTP.
-- `LivroService.java` → mantém `List<Livro>` e realiza cadastro/listagem.
+- LivroController.java → recebe GET e POST, inclusive o empréstimo e a devolução de livros cadastrados pelo título; devolve respostas HTTP.
+LivroService.java → mantém List<Livro>, realiza cadastro/listagem e busca de livro pelo título.
 - `index.html` e `style.css` → interface Web.
 
 ## Fluxo do cadastro (POST)
