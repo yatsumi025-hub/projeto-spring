@@ -4,6 +4,17 @@ Programação para Internet • 2º bimestre • Aula de 22/10/2026
 
 Evolução da Biblioteca: formulário + POST + armazenamento temporário.
 
+## Descrição
+
+Aplicação web simples para consultar, emprestar, devolver e cadastrar livros de uma biblioteca. O backend em Spring Boot expõe uma API REST com rotas GET e POST que trocam dados em JSON. O frontend em HTML, CSS e JavaScript consome essa API com fetch() e atualiza a tela sem recarregar a página. Os dados ficam apenas em memória, sem banco de dados e sem autenticação.
+
+## Tecnologias
+
+- Java 21
+- Spring Boot 4.1.1 com Maven Wrapper (mvnw)
+- HTML, CSS e JavaScript (fetch() para consumir a API)
+- Git e GitHub
+
 ## Problema e requisitos 
 
 **Problema:** em bibliotecas pequenas, o controle dos livros costuma ser feito em cadernos ou planilhas soltas. Isso dificulta saber quais livros existem no acervo e quais estão emprestados, e é comum emprestar um livro que já está com outra pessoa ou perder o registro de uma devolução. 
@@ -74,7 +85,13 @@ Acessar `http://localhost:8080`.
 - POST /livros pelo formulário: cadastra e mostra a mensagem de sucesso (testado).
 - GET /livros: lista os livros cadastrados (testado).
 
+![Diagrama UML da classe Livro](docs/uml-classes.png)
 
+## Justificativa da modelagem
+
+A classe Livro tem os atributos titulo e autor porque são as informações básicas para identificar um livro, e disponivel para indicar se ele pode ser emprestado no momento. Os atributos são privados e acessados por getters e setters, o que protege os dados dentro da classe. O atributo disponivel é booleano porque o livro só pode estar em dois estados, disponível ou emprestado, e os métodos emprestar() e devolver() apenas alternam esse valor.
+
+O LivroService guarda os livros em uma List<Livro> para separar as responsabilidades: o controller cuida das requisições e o service cuida dos dados. A lista fica em memória por ser a solução mais simples nesta etapa, e por isso os livros cadastrados são perdidos quando a aplicação reinicia.
 
 ## Divisão de Responsabilidades e Atividades
 
