@@ -1,6 +1,6 @@
 # Biblioteca Web — Spring Boot
 
-Programação para Internet • 2º bimestre • Aula de 22/10/2026
+Programação para Internet • 2º bimestre 
 
 Evolução da Biblioteca: formulário + POST + armazenamento temporário.
 
