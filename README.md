@@ -95,6 +95,7 @@ Acessar `http://localhost:8080`.
 - GET /livros/devolver?titulo=...: devolve o livro cadastrado (testado).
 - Título inexistente: responde "Livro não encontrado." (testado).
 - Reinício da aplicação: a lista volta vazia, pois os dados ficam só em memória (testado).
+- Os testes finais foram executados em 18/11/2026 em um Codespace da conta do GitHub de (Isaborges-cmyk) Isabella Luiza Fernandes Borges, porque o acesso à conta anterior ficou indisponível(“You are out of monthly budget”).
 
 ![Diagrama UML da classe Livro](docs/uml-classes.png)
 
