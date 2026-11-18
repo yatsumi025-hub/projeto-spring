@@ -74,7 +74,7 @@ Acessar `http://localhost:8080`.
 1. Aplicação inicia sem erros? **Sim.** Iniciada com `./mvnw spring-boot:run` e acessada na porta 8080.
 2. GET /livro continua funcionando? **Sim.** Retorna o JSON do livro O Hobbit.
 3. Formulário envia título e autor? **Sim.** Ao cadastrar “Dom Casmurro”, apareceu “Livro cadastrado com sucesso!”.
-4. POST /livros retorna resposta adequada? **Sim.** O livro foi cadastrado e aparece na lista. O código de resposta é 201 (Created), definido por `@ResponseStatus`.
+4. POST /livros retorna resposta adequada? Sim. O livro foi cadastrado e aparece na lista. O código definido no controller é 201 (Created), por @ResponseStatus.
 5. GET /livros mostra os livros cadastrados? **Sim.** Retorna `[{"titulo":"Dom Casmurro","autor":"Machado de Assis","disponivel":true}]`.
 6. O que acontece ao reiniciar a aplicação? **Sim.** Após reiniciar com `./mvnw spring-boot:run`, GET /livros retornou `[]`, pois os dados ficam só em memória.
 
