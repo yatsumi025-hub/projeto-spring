@@ -54,12 +54,19 @@ List<Livro>
 
 ## Endpoints
 
-- `GET /livro` → livro de exemplo (Emprestar e Devolver preservados).
-- `GET /livros` → consultar a lista de livros.
-- `POST /livros` → enviar dados de um novo livro (`Content-Type: application/json`).
+- `GET /livro` → livro de exemplo (O Hobbit), preservado.
+- `GET /livro/emprestar` e `GET /livro/devolver` → empréstimo e devolução do livro de exemplo.
+- `GET /livros` → lista dos livros cadastrados.
+- `POST /livros` → cadastra um novo livro (`Content-Type: application/json`).
+- `GET /livros/emprestar?titulo=...` → empresta um livro cadastrado, identificado pelo título. Responde 404 se não existir e 409 se já estiver emprestado.
+- `GET /livros/devolver?titulo=...` → devolve um livro cadastrado, identificado pelo título. Responde 404 se não existir e 409 se já estiver disponível.
 
-Os dados ficam apenas em memória (sem banco de dados e sem autenticação).
+## Limitações observadas
 
+- Os dados ficam apenas em memória: reiniciar a aplicação limpa o acervo.
+- Se houver dois livros com o mesmo título, a busca pega o primeiro encontrado (não testado).
+- O livro de exemplo (O Hobbit) não aparece em `/livros` e usa as rotas `/livro/...`.
+  
 ## Como executar
 
 ```
@@ -74,21 +81,20 @@ Acessar `http://localhost:8080`.
 1. Aplicação inicia sem erros? **Sim.** Iniciada com `./mvnw spring-boot:run` e acessada na porta 8080.
 2. GET /livro continua funcionando? **Sim.** Retorna o JSON do livro O Hobbit.
 3. Formulário envia título e autor? **Sim.** Ao cadastrar “Dom Casmurro”, apareceu “Livro cadastrado com sucesso!”.
-4. POST /livros retorna resposta adequada? Sim. O livro foi cadastrado e aparece na lista. O código definido no controller é 201 (Created), por @ResponseStatus.
+4. POST /livros retorna resposta adequada? **Sim.** O livro foi cadastrado e aparece na lista. O código definido no controller é 201 (Created), por `` @ResponseStatus ``.
 5. GET /livros mostra os livros cadastrados? **Sim.** Retorna `[{"titulo":"Dom Casmurro","autor":"Machado de Assis","disponivel":true}]`.
 6. O que acontece ao reiniciar a aplicação? **Sim.** Após reiniciar com `./mvnw spring-boot:run`, GET /livros retornou `[]`, pois os dados ficam só em memória.
 
 ## Resultado dos testes
 
-- GET /livro: retorna o JSON do livro (testado no navegador).
-- GET /livro/emprestar e /livro/devolver: alteram a disponibilidade (testado).
+- GET /livro, GET /livro/emprestar e GET /livro/devolver: funcionam e alteram a disponibilidade do livro de exemplo (testado).
 - POST /livros pelo formulário: cadastra e mostra a mensagem de sucesso (testado).
 - GET /livros: lista os livros cadastrados (testado).
+- GET /livros/emprestar?titulo=...: empresta o livro cadastrado (testado).
+- Empréstimo do mesmo livro pela segunda vez: recusado com "Livro já está emprestado." (testado).
+- GET /livros/devolver?titulo=...: devolve o livro cadastrado (testado).
+- Título inexistente: responde "Livro não encontrado." (testado).
 - Reinício da aplicação: a lista volta vazia, pois os dados ficam só em memória (testado).
-
-Limitações observadas:
-- Empréstimo e devolução funcionam apenas para o livro O Hobbit, que é fixo no controller. O livro cadastrado (Dom Casmurro) não pode ser emprestado.
-- Não há verificação de empréstimo duplicado (não testado).
 
 ![Diagrama UML da classe Livro](docs/uml-classes.png)
 
