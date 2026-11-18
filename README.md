@@ -84,6 +84,11 @@ Acessar `http://localhost:8080`.
 - GET /livro/emprestar e /livro/devolver: alteram a disponibilidade (testado).
 - POST /livros pelo formulário: cadastra e mostra a mensagem de sucesso (testado).
 - GET /livros: lista os livros cadastrados (testado).
+- Reinício da aplicação: a lista volta vazia, pois os dados ficam só em memória (testado).
+
+Limitações observadas:
+- Empréstimo e devolução funcionam apenas para o livro O Hobbit, que é fixo no controller. O livro cadastrado (Dom Casmurro) não pode ser emprestado.
+- Não há verificação de empréstimo duplicado (não testado).
 
 ![Diagrama UML da classe Livro](docs/uml-classes.png)
 
